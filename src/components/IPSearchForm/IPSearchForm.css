@@ -1,0 +1,49 @@
+.formIP {
+    display: flex;
+    justify-content: center;
+
+}
+
+.formIP input {
+    font-size: 1.125rem;
+    /* width: 491px; */
+    width: 40%;
+    border: none;
+    border-radius: var(--border-rd) 0 0 var(--border-rd);
+    padding-left: 1.3rem;
+
+}
+
+.formIP input::placeholder {
+    color: hsl(var(--dark-gray));
+}
+
+.formIP button {
+    padding: 1rem 1.5rem;
+    background-color: #000;
+    border: none;
+    border-radius: 0 var(--border-rd) var(--border-rd) 0;
+
+}
+
+.formIP button:hover {
+    cursor: pointer;
+}
+
+.formIP input,
+.formIP button {
+    padding-block: 1rem;
+}
+
+
+
+@media(max-width:375px) {
+    .formIP input {
+        width: 72%;
+        font-size: 1rem;
+    }
+
+    .formIP button {
+        width: 16%;
+    }
+}

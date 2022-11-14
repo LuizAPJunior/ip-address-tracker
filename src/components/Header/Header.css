@@ -1,0 +1,21 @@
+.header {
+    background-image: url('../../assets/images/pattern-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-block-start: 2rem;
+    padding-block-end: 8rem;
+
+}
+
+.header h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+@media(max-width: 375px) {
+    .header h1 {
+        font-size: 1.3rem;
+    }
+}
