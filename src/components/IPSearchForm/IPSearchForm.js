@@ -32,7 +32,7 @@ const IPSearchForm = ({ setLocation }) => {
 				id="ip"
 				placeholder="Search for any IP Address or Domain"
 			/>
-			<button name="search-button" type="submit">
+			<button name="search-button" aria-label="search button" type="submit">
 				<svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
 					<path fill="none" stroke="#FFF" strokeWidth="3" d="M2 1l6 6-6 6" />
 				</svg>
