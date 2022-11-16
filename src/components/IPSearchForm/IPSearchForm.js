@@ -17,6 +17,10 @@ const IPSearchForm = ({ setLocation }) => {
 			)
 				.then((response) => response.json())
 				.then((data) => setLocation(data));
+		} else {
+			fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}`)
+				.then((response) => response.json())
+				.then((data) => setLocation(data));
 		}
 	}, [ip]);
 
